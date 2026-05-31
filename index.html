@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy birthday sayangg</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body 
+style="background-image: url(https://images.unsplash.com/photo-1548386135-9002f96a0dc4?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+"
+ class="flex justify-center h-screen items-center"
+>
+<div class="bg-white border px-10 py-8 border-4 border-pink-400 shadow-lg shadow-pink-300 rounded-xl text-center animate__animated animate__backInDown m-8 w-80"
+ id="kartu"
+
+>
+    <h1 class="text-3xl">Happy birthday  
+    </h1>
+    <h1 class="text-4xl text-red-500 font-bold animate__animated animate__pulse animate__infinite"
+    >sayangg
+</h1>
+    <button 
+    class="p-2 bg-pink-300 text-black rounded mt-5 hover:bg-pink-400 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+    onclick="ubahkartu()"
+    >
+    klik disini kalo mau tau rahasiaku</button>
+</div>
+
+            <script
+            src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@4.0.5/tsparticles.confetti.bundle.min.js"></script>
+            <script>confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: { y: .6 },
+});
+
+let kartu = document.getElementById("kartu")
+function ubahkartu() {
+kartu.innerHTML = `<h1 class="font-semibold text-wrap animate__animated animate__zoomIn">
+Happy Birthday pacar kuu Araa🤍
+Terima kasih sudah hadir dan mewarnai hari-hariku dengan tawa, cerita, dan kasih sayang kamu. semoga semua harapan kamu terwujud satu persatu, sehat selalu, bahagia. dan  Aku bersyukur bisa mengenal dan mencintaimu. semoga di usia yang baru ini, kita bisa menciptakan lebih banyak kenangan indah bersama. I love you kak eginn. 🎂✨
+</h1>
+<h2 class="mt-3 animate__animated animate__fadeIn">
+    -Dari : hazaa
+</h2>
+<button 
+class="p-2 bg-pink-200 text-black rounded mt-5 hover:bg-pink-400 transition ease-in w-full animate__animated animate__delay-1s animate__tada"
+onclick="refresh()"
+>
+selesaii
+</button>
+`;
+
+ 
+}
+function refresh() {
+location.reload();
+}
+
+</script>      
+</body>
+</html>
